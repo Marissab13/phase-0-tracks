@@ -11,4 +11,4 @@ A branch is a copy of the file you want to work on. This is done to make changes
 A commit is a saving point for a project that you're working on. A good commit message will describe what changes were made in the file. 
 
 ** What is a merge conflict? **
-A merge conflict happens when two or more people edit the same line in a file. This can usually be prevented by communicating better as a team.
+A merge conflict happens when two or more people edit the same line in a file. This can usually be prevented by communicating better as a team!
