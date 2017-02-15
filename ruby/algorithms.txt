@@ -20,6 +20,23 @@
 	-otherwise, do not exit the elevator
 
 
-MARISSA’S OWN ALGORITHM FOR
+MARISSA’S OWN ALGORITHM FOR CHOOSING A SNACK
+
+-If hungry:
+-Decide whether the snack should be sweet or salty
+-If decision is sweet:
+	- Eat some strawberries
+		-If there are no strawberries:
+			-Eat sugar-free chocolate pudding
+-If decision is salty:
+	- Eat a low-carb tortilla with hummus
+		- If there are no tortillas or hummus:
+			- Eat pork rinds
+
+-Until stomach feels full: 
+	-Continue eating snack chosen
+
+
+
 
 	
