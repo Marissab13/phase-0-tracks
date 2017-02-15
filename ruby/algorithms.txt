@@ -1,0 +1,25 @@
+-For each elevator
+-Decide which floor in the building you need to go
+-Press the button to call the elevator to you
+
+-If elevator arrives:
+	-Step into the elevator
+	-Look for a button panel next to the doors 
+	-Find the button with the floor number on it
+	- Press the button 
+	-If button does not light up, press it faster
+
+-Press the close door button that has the symbol “><“ on it
+	-If door does not close, furiously press button 2.0 	times harder while muttering obscenities
+-Wait as the doors close and the elevator starts moving
+
+- Until the elevator stops on the floor number chosen 		-Sing the chorus of “Call Me Maybe” 
+	-Attempt to make eye contact with others in the elevator
+
+-If the elevator stops on the floor number you have picked, exit the elevator
+	-otherwise, do not exit the elevator
+
+
+MARISSA’S OWN ALGORITHM FOR
+
+	
