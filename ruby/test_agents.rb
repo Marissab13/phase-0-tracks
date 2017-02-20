@@ -43,5 +43,3 @@ else
 	puts "I'm sorry, try again"
 end
 
-
-
