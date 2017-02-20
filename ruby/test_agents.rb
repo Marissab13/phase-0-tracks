@@ -1,25 +1,29 @@
 
+decode = "&"
+reference = "abcdefghijklmnopqrstuvwxyz"
 puts "Would you like to encrypt or decrypt a password today?"
 crypt = gets.chomp
 puts "Enter a password"
 password = gets.chomp
-index = 0
-decode = "&"
-reference = "abcdefghijklmnopqrstuvwxyz"
 
-def encryptions(str)
-	while index < password.length
-  	password[index] = password[index].next!
+
+def encryption(str)
+	index = 0
+	while index < str.length
+  	str[index] = str[index].next!
   	index += 1
-  	return password
+  	return str
 
 	end
 end
 
  
 def decryption(str)
-	while index < password.length
-		pw = password[index]
+	index = 0
+	decode = "&"
+	reference = "abcdefghijklmnopqrstuvwxyz"
+	while index < str.length
+		pw = str[index]
 		ref = reference.index(pw)
 		ref -= 1
 		val = reference[ref]
@@ -31,6 +35,7 @@ def decryption(str)
 		return decode
 end
 
+
 if crypt == "encrypt"
 	puts encryption(password)
 elsif crypt == "decrypt"
@@ -38,9 +43,4 @@ elsif crypt == "decrypt"
 else
 	puts "I'm sorry, try again"
 end
-
-
-
-
-
 
