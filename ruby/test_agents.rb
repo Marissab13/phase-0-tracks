@@ -1,6 +1,5 @@
 
-decode = "&"
-reference = "abcdefghijklmnopqrstuvwxyz"
+
 puts "Would you like to encrypt or decrypt a password today?"
 crypt = gets.chomp
 puts "Enter a password"
