@@ -46,6 +46,8 @@ end
 
 
 
+
+#This is the last one, a method that will remove items from a data structure until the condition in the block evaluates to false. I'm still working on this one lol
 flavors.map do |flavor|
 	if flavor != "pistacio"
 
