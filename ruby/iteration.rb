@@ -1,13 +1,14 @@
-#def happy_day
-#	puts "I hope you're having a happy day!"
-#	yield("Horace", "Barbara")
-#end 
+# def happy_day
+# 	puts "I hope you're having a happy day!"
+# 	yield("Horace", "Barbara")
+# end 
 
-#happy_day {|person1, person2|puts "It's a lovely day outside #{person1} and #{person2}."}
+# happy_day {|person1, person2|puts "It's a lovely day outside #{person1} and #{person2}."}
 
 
 
 flavors = ["chocolate", "strawberry", "vanilla", "pistachio"]
+
 desserts = {'cake' => 'vanilla', 'pie' => 'strawberry', 'ice_cream' => 'pistacho', 'candy_bar' => 'chocolate'}
 
 puts flavors 
@@ -49,7 +50,7 @@ end
 
 #This is the last one, a method that will remove items from a data structure until the condition in the block evaluates to false. I'm still working on this one lol
 flavors.map do |flavor|
-	if flavor != "pistacio"
+	until flavors
 
 	puts flavors.reject{|flavor| flavor == "pistacio"}
 end 
