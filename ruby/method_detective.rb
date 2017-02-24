@@ -36,6 +36,7 @@ puts "The case of the disappearing last letter".chop
 puts "The mystery of the missing first letter".slice(1..-1)
 # "The mystery of the missing first letter".<???>
 # => "he mystery of the missing first letter"
+puts "She loves spam".slice(1..-1)
 
 puts "Elementary,    my   dear        Watson!".gsub!(/\s+/, ' ')
 # "Elementary,    my   dear        Watson!".<???>
@@ -45,9 +46,11 @@ puts "z".ord
 # "z".<???>
 # => 122 
 # (What is the significance of the number 122 in relation to the character z?)
+puts "f".ord
 
 puts "How many times does the letter 'a' appear in this string?".index("a")
 # "How many times does the letter 'a' appear in this string?".<???>
+puts "Chicken and biscuits with a side of waffles.".index("s")
 # => 4
 
 
