@@ -1,3 +1,4 @@
+#nesting
 haunted_house = {
     room_one: {
         room_name: "Foyer",
