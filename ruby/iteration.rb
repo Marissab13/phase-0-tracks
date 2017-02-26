@@ -16,18 +16,15 @@ flavors.each do |flavor|
 	puts "I love #{flavor}!"
 end 
 
-puts desserts 
+# puts desserts 
 desserts.each do |thing, taste|
 	puts "I really hate #{thing} especially #{taste}!"
 end
 
-puts flavors
+# puts flavors
 flavors.map! do |flavor|
 	puts flavor.upcase
 end 
-
-puts flavors
-flavors.select{|flavor| }
 
 flavors.each do |flavor|
 	puts flavors.delete_if{|flavor| flavor =="chocolate"}	
@@ -46,17 +43,11 @@ desserts.map do |food, taste|
 end 
 
 
+ 
+flavors = ["chocolate", "strawberry", "vanilla", "pistachio"]
 
-
-#This is the last one, a method that will remove items from a data structure until the condition in the block evaluates to false. I'm still working on this one lol
 flavors.map do |flavor|
-	until flavors
-
-	puts flavors.reject{|flavor| flavor == "pistacio"}
-end 
-
-
-
-
+p flavors.drop_while{|flavor| flavor.length >= 9}
+end
 
 
