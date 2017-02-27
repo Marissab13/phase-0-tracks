@@ -50,4 +50,8 @@ flavors.map do |flavor|
 p flavors.drop_while{|flavor| flavor.length >= 9}
 end
 
+desserts.map do |food, taste|
+ desserts.delete_if{|food, taste|food.lengh <4}
+end 
+
 
