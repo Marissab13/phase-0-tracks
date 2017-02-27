@@ -8,32 +8,21 @@
 
 # change all vowels to the next vowel (a,e,i,o,u)
 # change all consonants to the next 
+
 loop do 
-puts "Please enter your first and last name, or type 'exit' to quit"
-	input = gets.chomp
-  break if input =="exit"
-     name_collection = [] 
-	spyname = input.chars
-	spyname.reverse! 
-	spyname.map! do |letter|
-   #  letter = letter.next 
-   # p spyname
-   puts letter
-   letter.next
-  new_name = spyname.join
-  puts new_name
-  # name_collection = []
-  name_collection << new_name
-  puts name_collection 
-  end
-#
+  super_spy_array = Array.new
+  puts "Please enter your first and last name, or type 'exit' to quit"
+    user_name = gets.chomp
+    break if user_name =='exit'
+    user_name = user_name.chars
+    user_name.map! {|letter| letter.next}
+    spyname = user_name.join('')
+    super_spy_array.push spyname
+     super_spy_array << spyname
+    p super_spy_array
+
 end
-
-
-
-  # def letter_change(str)
-  # 	vowels = ["a", "e", "i", "o", "u"]
-  # 	 # str.scan(/[aeoui]/).count
+puts super_spy_array
 
 	
 
