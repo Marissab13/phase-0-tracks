@@ -1,16 +1,3 @@
-# arr = [10, 11, 12, 13]
-
-# def search_array
-# 	yield 
-# 	 end 
-	 
-
-# puts search_array(arr, 15)
-# end 
-  
-
-# search_array {|array| puts arr.index(value)]}
-
 
 
 def fib(n)
@@ -31,4 +18,28 @@ end
   result = fib(n)
 end 
 
-#
+
+def bubble_sort(array)
+	n = array.length
+
+	loop do 
+
+	swapped = false
+
+	(n-1).times	do |i|
+		if array [i] > array [i + 1]
+			array[i], array[i+1] = array[i + 1], array[i]
+			swapped = true
+			end
+		end
+
+		break if not swapped
+	end 
+	
+	array
+end 
+
+a = [5, 4, 5, 6, 2, 6, 1]
+p bubble_sort(a)
+
+
