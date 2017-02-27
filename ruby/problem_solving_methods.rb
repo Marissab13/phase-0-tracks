@@ -27,7 +27,8 @@ def fib(n)
   end 
 end
 
-
 6.times do |n|
   result = fib(n)
 end 
+
+#
