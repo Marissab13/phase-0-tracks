@@ -39,8 +39,6 @@ repeat = gets.chomp
 		end
 end 
 
- 
-
 calculator 
 
 
