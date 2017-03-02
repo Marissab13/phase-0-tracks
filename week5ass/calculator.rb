@@ -1,6 +1,14 @@
-def calculator(num1, num2, operator)
+def calculator
+	puts "Welcome to Snazzy, the smartest calculator in the world! Go ahead and input a number."
+	 	num1 = gets.chomp.to_i
 
-		if operator == "add"
+	puts "Now, enter another number."
+		num2 = gets.chomp.to_i
+
+	puts "Choose add, subtract, multiply, or divide"
+		operator = gets.chomp
+	
+	if operator == "add"
 			print num1 + num2
 
 	elsif operator == "subtract"
@@ -12,9 +20,16 @@ def calculator(num1, num2, operator)
 	else operator == "divide"
 			puts num1 / num2
 	end
+	puts "Would you like to calculate again?"
+	repeat = gets.chomp
+		if repeat == "yes"
+			p calculator 
+		end
 end 
 
-calculator(6,5,"add")
+calculator 
+
+
 
 #DRIVER CODE
 # calculator(5,5,"add")
