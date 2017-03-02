@@ -8,6 +8,7 @@ loop do
 		puts "Choose add, subtract, multiply, or divide"
 			operator = gets.chomp
 
+	performed = []		
 
 	if operator == "add"
 				print num1 + num2
@@ -20,11 +21,15 @@ loop do
 
 		else operator == "divide"
 				puts num1 / num2
+					return << performed
+
 	end
+
+
 
 		puts "Would you like to use Snazzy again?"
 		repeat = gets.chomp
-break if repeat =="no"
+			break if repeat =="no"
 			end
 	end
 
