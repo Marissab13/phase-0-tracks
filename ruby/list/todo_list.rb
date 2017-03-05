@@ -1,4 +1,5 @@
 class TodoList
+<<<<<<< HEAD
     def initialize(list_array)
         @list_array = list_array
     end
@@ -14,4 +15,13 @@ class TodoList
     def get_item(position)
         @list_array[position]
     end
+=======
+
+	def initialize(list_array)
+		@list_array = list_array
+	end
+	def get_items
+		@list_array
+	end
+>>>>>>> 32fd89cab2cdfbfbecdee4b811fddde0ec729b1e
 end
