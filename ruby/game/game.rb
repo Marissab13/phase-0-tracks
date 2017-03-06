@@ -1,13 +1,14 @@
-
+a
 class DragonGame
 	attr_reader :guess_count
 	attr_reader :is_over
 
 
-	@num_of_guesses = []
-	@letter = []
 
 	def initialize
+	@letters = []
+	@num_of_guesses = 0
+	@game_over = false
 		
 		puts "Initializing WordGame instance"
 	end 
@@ -15,8 +16,8 @@ class DragonGame
 	def dragon_names
 		@dragons = ["alexstraza", "nozdormu", "yesera", "malygos", "neltharion", "onyxia", "kalecgos", "galakrond", "deathwing"]
 			@dragon = @dragons.sample.chars.to_a
+			@guess_count = word.length
 			puts @dragon 
-
 	end 
 
 	def guess(letter)
