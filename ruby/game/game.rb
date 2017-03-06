@@ -1,5 +1,16 @@
-a
 class DragonGame
+	attr_reader :guess_count
+	attr_reader :is_over
+
+
+
+	def initialize
+	@letters = []
+	@num_of_guesses = 0
+	@game_over = false
+	@d_names = d_names
+		
+		class DragonGame
 	attr_reader :guess_count
 	attr_reader :is_over
 
@@ -37,6 +48,11 @@ game.dragon_names
 puts "Please enter a letter."
 letter = gets.chomp
 game.guess(letter)
+
+puts "Please enter a letter."
+letter = gets.chomp
+
+
 
 
 
