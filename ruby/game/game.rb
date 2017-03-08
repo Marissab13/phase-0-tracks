@@ -1,56 +1,51 @@
 class DragonGame
-	attr_reader :guess_count
-	attr_reader :is_over
+	attr_reader 
+	attr_writer 
 
 
-
-	def initialize
-	@letters = []
-	@num_of_guesses = 0
-	@game_over = false
-	@d_names = d_names
+	def initialize_1
+		@guesses = 0
+		@over = false
+		@name_array = ["alexstraza", "nozdormu", "yesera", "malygos", "neltharion", "onyxia", "kalecgos", "galakrond", "deathwing"]
+		@dragon_name = @name_array.sample
+		@dragon_name = @dragon_name.chars
 		
-		class DragonGame
-	attr_reader :guess_count
-	attr_reader :is_over
-
-
-
-	def initialize
-	@letters = []
-	@num_of_guesses = 0
-	@game_over = false
-		
-		puts "Initializing WordGame instance"
-	end 
-
-	def dragon_names
-		@dragons = ["alexstraza", "nozdormu", "yesera", "malygos", "neltharion", "onyxia", "kalecgos", "galakrond", "deathwing"]
-			@dragon = @dragons.sample.chars.to_a
-			@guess_count = word.length
-			puts @dragon 
-	end 
-
-	def guess(letter)
-
-		if @dragon.include?(letter)
-		  puts "correct!"
-		end
-	end 
 	
+		puts "Initializing DragonGame instance"
+		puts @dragon_name 
+		end 
+
+		def dragon_name
+			@dragon_name = @name_array.sample
+			@dragon_name = @dragon_name.chars
+		end
+
+		def user_guess
+			puts "Please enter a letter"
+			@letter_guess = gets.chomp.downcase 
+
+			if @dragon_name.include?(@letter_guess)
+				puts "You have guessed a letter correctly!"
+			else
+				@guesses += 1
+				puts "You are incorrect, please try again."
+			end 
+		end 
+
+
+		def show_progress
+			for |letter| in @dragon_name 
+				if @letter_guess != |letter|
+					letter = "-"
+				end 
+		end 
+
+		
 end 
+			
+			
 
-puts "Guess the dragon name!"
-game = DragonGame.new 
-game.dragon_names 
-
-
-puts "Please enter a letter."
-letter = gets.chomp
-game.guess(letter)
-
-puts "Please enter a letter."
-letter = gets.chomp
+# dragon_game = DragonGame.new
 
 
 
@@ -58,7 +53,6 @@ letter = gets.chomp
 
 
 
-# dragonnamegame = DragonNameGame.new
-# dragonnamegame.dragons
+
 
 
