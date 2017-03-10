@@ -1,0 +1,20 @@
+PSEUDOCODE FOR GAME
+
+1. create a new class for words
+	-list of different words 
+	-pick random word in list
+	- 
+
+	instance variables needed
+	word
+good guess
+bad guess
+loser
+winner
+guess
+  
+
+The user will enter a letter
+if the letter is in the random word, print out  - - - s - - or whatever
+if the letter is not in the random word, bad guess, guesses +1
+if the letter is in the random word, good guess, guesses +0
