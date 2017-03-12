@@ -8,6 +8,10 @@
 
 
 //RELEASE 1
+//create a function that takes two objects with keys and values
+//compare the keys and values, check for matches
+//if there are no matches, return false
+
 
 //RELEASE 2
 
@@ -27,3 +31,30 @@ return longestWord;
 
 }
  longestWord("Your muffins smell like shit and so do your ideas.");
+
+
+ function valueMatch(obj1, obj2) {
+
+ 	if (aProps.length != bProps.length) {
+        return false;
+        }
+
+    for (var i = 0; i < aProps.length; i++) {
+        var propName = aProps[i];
+ 		}
+
+ 		if (a[propName] !== b[propName]) {
+            return false;
+        }
+
+          return true;
+
+}
+
+
+
+
+
+
+
+
