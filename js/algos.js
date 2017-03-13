@@ -14,6 +14,10 @@
 
 
 //RELEASE 2
+//make a function that takes a number from the user
+//create a string of alpha-numeric possiblilties
+//have the function check the number and output a string with that number of characters
+//can use random to help
 
 function longestWord(str) {
     var split = str.split(' ');
