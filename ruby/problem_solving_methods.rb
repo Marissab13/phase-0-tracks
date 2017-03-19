@@ -39,7 +39,7 @@ def bubble_sort(array)
 	array
 end 
 
-a = [5, 4, 5, 6, 2, 6, 1]
-p bubble_sort(a)
-
+# a = [5, 4, 5, 6, 2, 6, 1]
+# p bubble_sort(a)
+fib(6)
 
