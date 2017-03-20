@@ -10,12 +10,8 @@
 def name_swap(first_name, last_name)
 	switched_name =  (last_name + ' ' +first_name).chars
 	puts switched_name
-	switched_name.map do |letter|
-		if 
-	end
 	end 
 
-
-
+	
 name_swap("marissa", "berrong")
 
