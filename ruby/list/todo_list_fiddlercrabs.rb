@@ -1,6 +1,7 @@
 class TodoList
+
   def initialize(list)
-    @list = ["do the dishes", "mow the lawn"]
+    @list = list
   end
 
   def get_items
