@@ -1,4 +1,4 @@
-class TodoList
+class Todo_list
 
   def initialize(list)
     @list = list
