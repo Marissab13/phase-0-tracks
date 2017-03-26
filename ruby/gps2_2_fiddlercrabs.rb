@@ -72,7 +72,13 @@ end
 update_quantity("apples", 10, grocery_list)
 
 
+def pretty_print(grocery_list)
+	grocery_list.each do |item, quantity|
+		puts "Our grocery list says we need to get #{quantity} of the #{item}"
+	end 
+end 
 
+pretty_print(grocery_list)
 
 
 
