@@ -45,4 +45,14 @@ def create_list(items)
 
 grocery_list = create_list("apples bananas quinoa")
 
+
+
+def add_item(item, quantity, grocery_list)
+  grocery_list[item] = quantity
+  print grocery_list 
+end 
+
+p grocery_list
+
+add_item("tortillas", 100, grocery_list)
 p grocery_list 
