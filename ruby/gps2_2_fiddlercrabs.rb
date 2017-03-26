@@ -52,7 +52,7 @@ def add_item(item, quantity, grocery_list)
   print grocery_list 
 end 
 
-p grocery_list
+
 
 add_item("tortillas", 100, grocery_list)
 p grocery_list 
@@ -79,6 +79,20 @@ def pretty_print(grocery_list)
 end 
 
 pretty_print(grocery_list)
+
+#RELEASE 5
+#I learned that it's much easier to use pseudocode to break down your problems into easier steps before you start to code. This makes it easier for my brain to see exactly what needs to be done. 
+
+#I think that for this challenge, a hash was needed in order to keep the item and the quantity linked together. However, it seems like it's a little more difficult to iterate over hashes since they're more complex structures than a basic array. 
+
+#A method returns one object and it's usually the value of the last evaluated statement. 
+
+#Ruby is cool in that there are many kinds of things you can pass into a method as an argument. For example, strings, numbers, keys, hashes, arrays, and more! 
+
+#In order to pass information from one method to another, we can actually use a method call as an argument in another method to do this. 
+
+#I would say that scheduling this GPS after we have learned about classes has been confusing. Basically, we've alredy learned how to pass info to methods within a class, which is much easier. I feel like we have backtracked with this GPS. I'd suggest doing this GPS in week 4 or 5, when we are first starting to learn about methods and their behavior. This is because until this point, I think that students are under the assumption that methods are their own private pieces of data, and they can't pick up any information around them. What I learned is, that's not true. A method can actually use another method call as an argument. I guess that's been really hard to wrap my head around, since we've already learned about the ease of classes. 
+
 
 
 
