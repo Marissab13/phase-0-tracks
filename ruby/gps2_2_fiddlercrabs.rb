@@ -32,4 +32,17 @@
 #easy way to do this is to write a sentence to make it nice looking
 #the output should be the list, printed out in sentence form with the keys and values
 
+def create_list(items)
+	list = {}
+  item_array = items.split
 
+  item_array.each do |element|
+     list[element] = 1
+	end 
+ 
+ 	 return list 
+ end 
+
+grocery_list = create_list("apples bananas quinoa")
+
+p grocery_list 
