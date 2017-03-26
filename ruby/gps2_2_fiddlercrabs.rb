@@ -64,6 +64,16 @@ end
 
 remove_item("tortillas", grocery_list)
 
+def update_quantity(item, new_quantity, grocery_list)
+	grocery_list[item] = new_quantity
+	print grocery_list
+end
+
+update_quantity("apples", 10, grocery_list)
+
+
+
+
 
 
 
