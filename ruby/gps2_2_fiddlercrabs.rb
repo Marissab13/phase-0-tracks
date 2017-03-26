@@ -56,3 +56,14 @@ p grocery_list
 
 add_item("tortillas", 100, grocery_list)
 p grocery_list 
+
+def remove_item(item, grocery_list)
+  grocery_list.delete(item)
+  print grocery_list 
+end 
+
+remove_item("tortillas", grocery_list)
+
+
+
+
