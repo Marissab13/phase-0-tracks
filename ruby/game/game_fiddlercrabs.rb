@@ -36,11 +36,16 @@ def check_if_correct(guess)
 	new_guess
 end 
 
-def current_guess
-	end 
-
-
-
+def present_guess(guess)
+	if user_guesses(guess) && check_if_correct(guess)
+		@word.chars.each_with_index do |letter, i|
+			if letter == guess
+				@guessed[i] = letter
+			end
+		end
+	end
+	@guessed
+end
 end
 
 word_one = WordGame.new("happy")

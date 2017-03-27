@@ -14,6 +14,9 @@ describe WordGame do
 	it "checks to see if the user's letter guess is correct" do
 		expect(word.check_if_correct('x')).to eq false
 	end 
-	
+
+	it "checks to see if user_guesses and check_if_correct are both true" do
+		expect(word.present_guess('1')).to eq []
+	end 
 
 end 
