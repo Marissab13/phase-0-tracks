@@ -1,0 +1,15 @@
+Word Game Pseudocode
+
+Build a class called WordGame that can hold the following methods
+
+
+Build a guess_number method that looks at the length of the word and sets the guesses amount to that number. This method could also hide the word by using blank spaces 
+
+Build a  method that counts the number of guesses the user has done
+This method should not count repeated guesses, only new guesses
+
+Build a get_letter method that will take a letter as a guess and check it against the word
+If the letter is in the word, the user will see the letter and blanks where they need to guess the others. If the letter is incorrect, guess count +1 and an error message should appear. 
+
+Build a method that will give the user a congratulations method or a taunting message depending on if they win or lose. 
+
