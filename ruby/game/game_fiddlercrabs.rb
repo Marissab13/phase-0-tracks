@@ -14,7 +14,18 @@ def hide_word
 	@guessed = @guessed.push('_') * length
 	end 
 
-def user_guesses
+def user_guesses(guess)
+	new_guess = true
+	if !@guesses_used.include?(guess)
+		@guesses_used << guess 
+		@number_of_guesses -=1
+	else
+		new_guess = false
+		puts "That letter has been guessed before. Try again."
+	end
+	new_guess
+end 
+
 end 
 
 def check_if_correct
