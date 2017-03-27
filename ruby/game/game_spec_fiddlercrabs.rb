@@ -8,7 +8,7 @@ describe WordGame do
 	end 
 
 	it "checks if letter has been guessed previously" do
-		expect(word.user_guesses(' ')).to eq true 
+		expect(word.user_guesses('h')).to eq true 
 	end 
 
 end 

@@ -26,7 +26,7 @@ def user_guesses(guess)
 	new_guess
 end 
 
-end 
+
 
 def check_if_correct
 end 
