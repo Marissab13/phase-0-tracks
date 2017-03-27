@@ -1,12 +1,11 @@
 Word Game Pseudocode
 
-Build a class called Game that can hold methods
+Build a class called WordGame that can hold the following methods
 
-Build a enter_word method that allows one user to enter a word and store the word
 
-Build a  guess_number method that looks at the length of the word and sets the guesses amount to that number 
+Build a guess_number method that looks at the length of the word and sets the guesses amount to that number. This method could also hide the word by using blank spaces 
 
-Build a guess_counter method that counts the number of guesses the user has done
+Build a  method that counts the number of guesses the user has done
 This method should not count repeated guesses, only new guesses
 
 Build a get_letter method that will take a letter as a guess and check it against the word
