@@ -27,8 +27,13 @@ def user_guesses(guess)
 end 
 
 
-
-def check_if_correct
+def check_if_correct(guess)
+	new_guess = true
+	if !@word.include?(guess)
+		new_guess = false
+		puts "That's incorrect, try another letter instead!"
+	end 
+	new_guess
 end 
 
 def current_guess
