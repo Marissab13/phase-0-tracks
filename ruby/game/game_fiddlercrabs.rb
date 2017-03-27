@@ -34,7 +34,7 @@ def check_if_correct(guess)
 		puts "That's incorrect, try another letter instead!"
 	end 
 	new_guess
-end 
+	end 
 
 def present_guess(guess)
 	if user_guesses(guess) && check_if_correct(guess)
@@ -48,5 +48,56 @@ def present_guess(guess)
 end
 end
 
-word_one = WordGame.new("happy")
-puts word_one.hide_word
+# word_one = WordGame.new("happy")
+# puts word_one.hide_word
+
+#UI
+puts "Welcome to WordGame! To test your guessing skills, have player 1 enter a word."
+word = gets.chomp
+new_word = WordGame.new(word)
+new_word.hide_word
+
+puts "Player 2, start guessing!"
+
+loop do
+
+	if new_word.guessed.join == new_word.word
+		puts new_word.guessed.join(' ')
+		puts "Good job, you just won!"
+		break
+	end
+	if new_word.number_of_guesses == 0
+		puts "Sorry, you have no more guesses left. Bye bye."
+		break
+	end
+
+	puts "Go ahead and guess a letter."
+	puts new_word.guessed.join(' ')
+	guess = gets.chomp
+	new_word.present_guess(guess)
+end 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
