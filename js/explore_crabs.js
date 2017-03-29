@@ -17,3 +17,9 @@ function reverse(str) {
 	return joinArray;
 
 }
+
+reverse("Monkeybusiness");
+
+if (str.length <= 5) {
+	console.log("Why such a short word? Pick a longer one!")
+}
