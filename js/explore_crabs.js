@@ -5,3 +5,15 @@
 // iterate over the characters and reverse them
 // change the array back into a string
 // call the function 
+
+
+function reverse(str) {
+	var splitString = str.split("");
+
+	var reverseArray = splitString.reverse();
+
+	var joinArray = reverseArray.join("");
+
+	return joinArray;
+
+}
