@@ -67,7 +67,7 @@ class VirusPredictor
     else
       speed += 2.5
     end
-    #write a case statement for this method 
+    #write a case statement for this method in my free time 
 
     puts " and will spread across the state in #{speed} months.\n\n"
 
