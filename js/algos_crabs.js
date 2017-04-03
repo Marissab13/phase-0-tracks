@@ -3,6 +3,16 @@
 //2. Iterate through the strings and find the length of each one
 //3. Find a way to compare the lengths of the strings in the array to each other
 //4. Return the longest string in the array
+function longestWord(str) {
+    var split = str.split(' ');
+    var longWord = 0;
+    for(var i = 0; i < split.length; i++) {
+    if(split[i].length > longestWord.length) { 
+    longestWord = split[i].length; 
+        }
+    }
+
+return longestWord;
 
 
 
