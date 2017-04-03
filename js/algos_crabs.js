@@ -44,4 +44,19 @@ valueMatch({name: "Margaret", age: 20}, {name: "Marky Mark", age: 40})
 //3. Find a way to do a random 1-10 length for the words in the array
 //4. Return the array with the strings of random length inside
 
+function createString(num) {
+    var text = " ";
+
+    var charset = "abcdefghijklmnopqrstuvwxyz0123456789";
+    for (var i=0; i < num; i++ )
+        text += charset.charAt(Math.floor(Math.random() * charset.length));
+
+    return text;
+
+}
+
+console.log(createString(10));
+console.log(createString(4));
+console.log(createString(9));
+
 
