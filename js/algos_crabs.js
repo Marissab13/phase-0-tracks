@@ -14,6 +14,8 @@ function longestWord(str) {
 
 return longestWord;
 
+ longestWord("Your muffins smell like shit and so do your ideas.");
+
 
 
 //RELEASE 1 PSEUDOCODE - write a funciton that takes 2 objects and checks to see if the objects share a key/value pair
@@ -22,6 +24,18 @@ return longestWord;
 //3. Find a way to check if they are equal to one another
 //4. If there are no matches, the function should return 'false'
 //5. If there are matches, the function should return 'true'
+
+function valueMatch( obj1, obj2 ) {
+  return Object.keys( obj1 ).every( function( prop ) {
+    return obj2.hasOwnProperty( prop );
+  });
+}
+
+//DRIVER CODE
+
+valueMatch({name: "Steven", age: 54}, {name: "Tamir", age: 54})
+valueMatch({name: "Margaret", age: 20}, {name: "Marky Mark", age: 40})
+
 
 
 //RELEASE 2 PSEUDOCODE - write a function that takes an integer for length and builds and returns an array with that many strings inside (they don't have to be real words)
